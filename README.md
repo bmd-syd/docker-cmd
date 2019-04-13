@@ -26,6 +26,16 @@ Set default command that will be executed on running Docker container.
 
 ## Docker CLI
 
+### build 
+Build a Docker image from a Dockerfile tagging the Docker image.
+
+`docker build -t <id/name:tag>`
+
+Naming convention of a Docker image tag.
+
+`yourDockerId/projectName:version`
+`bdunlop/dockerized-react-app:latest`
+
 ### run
 Create and starts a Docker container from a Docker image.
 

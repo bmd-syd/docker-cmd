@@ -29,7 +29,7 @@ Set default command that will be executed on running Docker container.
 ### build 
 Build a Docker image from a Dockerfile tagging the Docker image.
 
-`docker build -t id/name:tag`
+`docker build -t <id/name:tag>`
 
 Naming convention of a Docker image tag.
 
@@ -39,7 +39,7 @@ Naming convention of a Docker image tag.
 ### run
 Create and starts a Docker container from a Docker image.
 
-`docker run IMAGE`
+`docker run <image>`
 
 ### ps
 List all running Docker containers.
@@ -53,17 +53,17 @@ List all Docker containers.
 ### stop
 Stop a running Docker container.
 
-`docker stop CONTAINER`
+`docker stop <container>`
 
 ### kill
 Kill a running Docker container.
 
-`docker kill CONTAINER`
+`docker kill <container>`
 
 ### logs
 Fetch all the logs that have been emitted from a Docker container.
 
-`docker logs CONTAINER`
+`docker logs <container>`
 
 ## Files
 

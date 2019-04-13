@@ -21,7 +21,7 @@ Execute command(s) and creates a new Docker image file. `RUN` is often used to i
 ### CMD
 Set default command that will be executed on running Docker container.
 
-`CMD ["param1", "param2"]`
+`CMD ["param1", "param2"]`<br>
 `CMD <cmd>`
 
 ## Docker CLI
@@ -33,8 +33,12 @@ Build a Docker image from a Dockerfile tagging the Docker image.
 
 Naming convention of a Docker image tag.
 
-`yourDockerId/projectName:version`
+`yourDockerId/projectName:version`<br>
 `bdunlop/dockerized-react-app:latest`
+
+When creating and starting a Docker container from a tagged Docker image, `:latest` is automatically appended when not specified.
+
+`docker run bdunlop/dockerized-react-app`
 
 ### run
 Create and starts a Docker container from a Docker image.

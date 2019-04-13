@@ -29,7 +29,7 @@ Set default command that will be executed on running Docker container.
 ### build 
 Build a Docker image from a Dockerfile tagging the Docker image.
 
-`docker build -t <id/name:tag>`
+`docker build -t id/name:tag`
 
 Naming convention of a Docker image tag.
 

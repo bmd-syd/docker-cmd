@@ -26,10 +26,15 @@ Set default command that will be executed on running Docker container.
 
 ## Docker CLI
 
-### build 
+### build
+Build a Docker image from a Dockerfile.
+
+`docker build .`
+
+#### --tag
 Build a Docker image from a Dockerfile tagging the Docker image.
 
-`docker build -t <id/name:tag>`
+`docker build -t <id/name:tag> .`
 
 Naming convention of a Docker image tag.
 
@@ -44,6 +49,13 @@ When creating and starting a Docker container from a tagged Docker image, `:late
 Create and starts a Docker container from a Docker image.
 
 `docker run <image>`
+
+#### --publish
+Create and starts a Docker container from a Docker image, publishing a container's port(s) to the host.
+
+`docker run -p <host>:<container> <image>`
+
+By default no traffice coming into the localhost network is redirect to into the Docker container network. To redirect a request into a Docker container, an explicit PORT mapping must be set up.
 
 ### ps
 List all running Docker containers.

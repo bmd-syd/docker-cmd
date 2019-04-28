@@ -54,6 +54,8 @@ Create and starts a Docker container from a Docker image.
 
 Create and start a Docker container a Docker image in the background, printing the Docker container ID.
 
+`docker run <image> -d`
+
 #### --publish
 Create and starts a Docker container from a Docker image, publishing a container's port(s) to the host.
 
@@ -93,6 +95,12 @@ Fetch all the logs that have been emitted from a Docker container.
 Create and starts instances of all Docker containers in a Compose configuration file.
 
 `docker-compose up`
+
+#### --detach
+
+Create and start a Docker container a Docker image in the background, printing the Docker container ID.
+
+`docker-compose up -d`
 
 #### --build
 

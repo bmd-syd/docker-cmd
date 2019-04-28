@@ -50,6 +50,10 @@ Create and starts a Docker container from a Docker image.
 
 `docker run <image>`
 
+#### --detach
+
+Create and start a Docker container a Docker image in the background, printing the Docker container ID.
+
 #### --publish
 Create and starts a Docker container from a Docker image, publishing a container's port(s) to the host.
 
@@ -61,6 +65,8 @@ By default no traffice coming into the localhost network is redirect to into the
 List all running Docker containers.
 
 `docker ps`
+
+#### --all
 
 List all Docker containers.
 
@@ -80,6 +86,41 @@ Kill a running Docker container.
 Fetch all the logs that have been emitted from a Docker container.
 
 `docker logs <container>`
+
+## Docker Compose
+
+### up
+Create and starts instances of all Docker containers in a Compose configuration file.
+
+`docker-compose up`
+
+#### --build
+
+Build images before creating and starting instances of all Docker containers in a Compose configuration file.
+
+`docker-compose up --build`
+
+### down
+
+Stops all Docker containers created by `up`.
+
+`docker-compose down`
+
+### ps
+
+List all running Docker containers that belong to the Compose configuration file. 
+
+Must be run from directory with Compose configuration file.
+
+`docker ps`
+
+#### --all
+
+List all running Docker containers that belong to the Compose configuration file.
+
+`docker ps -a`
+
+###
 
 ## Files
 

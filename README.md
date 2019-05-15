@@ -84,6 +84,16 @@ Kill a running Docker container.
 
 `docker kill <container>`
 
+### rm
+Remove one or more Docker containers.
+
+`docker rm <container>`
+
+### image rm
+Remove one or more Docker images.
+
+`docker image rm <image>`
+
 ### logs
 Fetch all the logs that have been emitted from a Docker container.
 
@@ -92,7 +102,7 @@ Fetch all the logs that have been emitted from a Docker container.
 ## Docker Compose
 
 ### up
-Create and starts instances of all Docker containers in a Compose configuration file.
+Builds, (re)create and starts instances of all Docker containers in a Compose configuration file.
 
 `docker-compose up`
 
@@ -102,15 +112,9 @@ Create and start a Docker container a Docker image in the background, printing t
 
 `docker-compose up -d`
 
-#### --build
-
-Build images before creating and starting instances of all Docker containers in a Compose configuration file.
-
-`docker-compose up --build`
-
 ### down
 
-Stops all Docker containers created by `up`.
+Stops and removes all Docker containers created by `up`.
 
 `docker-compose down`
 

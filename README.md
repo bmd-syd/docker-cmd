@@ -45,6 +45,12 @@ When creating and starting a Docker container from a tagged Docker image, `:late
 
 `docker run bdunlop/dockerized-react-app`
 
+### --file
+
+Specify path to an alternate Dockerfile to use to build a Docker image. (Default is Dockerfile)
+
+`docker build -f Dockerfile.dev`
+
 ### run
 Create and starts a Docker container from a Docker image.
 
@@ -61,7 +67,15 @@ Create and starts a Docker container from a Docker image, publishing a container
 
 `docker run -p <host>:<container> <image>`
 
-By default no traffice coming into the localhost network is redirect to into the Docker container network. To redirect a request into a Docker container, an explicit PORT mapping must be set up.
+By default no traffic coming into the localhost network is redirect to into the Docker container network. To redirect a request into a Docker container, an explicit PORT mapping must be set up.
+
+#### --volume
+
+Sets a mapping from a folder or file in a Docker containter to a folder or file on the local machine.
+
+*More information required*
+
+`docker run -v /usr/app/node_modules -v (pwd):/usr/app <image>`
 
 ### ps
 List all running Docker containers.

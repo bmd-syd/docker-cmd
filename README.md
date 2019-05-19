@@ -57,10 +57,15 @@ Create and starts a Docker container from a Docker image.
 `docker run <image>`
 
 #### --detach
-
 Create and start a Docker container a Docker image in the background, printing the Docker container ID.
 
 `docker run <image> -d`
+
+#### -it (--interactive + --tty)
+
+The `-it` instructs Docker to allocate a pseudo-TTY connected to the container’s `stdin`; creating an interactive `bash` shell in the container.
+
+`docker run -it <image>`
 
 #### --publish
 Create and starts a Docker container from a Docker image, publishing a container's port(s) to the host.
@@ -70,12 +75,16 @@ Create and starts a Docker container from a Docker image, publishing a container
 By default no traffic coming into the localhost network is redirect to into the Docker container network. To redirect a request into a Docker container, an explicit PORT mapping must be set up.
 
 #### --volume
-
 Sets a mapping from a folder or file in a Docker containter to a folder or file on the local machine.
 
 *More information required*
 
 `docker run -v /usr/app/node_modules -v (pwd):/usr/app <image>`
+
+### exec
+Run a command in a running Docker container.
+
+`docker exec <container> <command>`
 
 ### ps
 List all running Docker containers.

@@ -86,6 +86,12 @@ Run a command in a running Docker container.
 
 `docker exec <container> <command>`
 
+##### sh
+
+Start a shell session with the default shell installed in the Docker container.
+
+`docker exec <container> sh`
+
 ### ps
 List all running Docker containers.
 

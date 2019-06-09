@@ -51,6 +51,10 @@ Specify path to an alternate Dockerfile to use to build a Docker image. (Default
 
 `docker build -f Dockerfile.dev`
 
+### history
+
+Show the history of an image including image layers.
+
 ### run
 Create and starts a Docker container from a Docker image.
 

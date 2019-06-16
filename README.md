@@ -65,18 +65,18 @@ Create and start a Docker container a Docker image in the background, printing t
 
 `docker run <image> -d`
 
-#### -it (--interactive + --tty)
-
-The `-it` instructs Docker to allocate a pseudo-TTY connected to the container’s `stdin`; creating an interactive `bash` shell in the container.
-
-`docker run -it <image>`
-
 #### --publish
 Create and starts a Docker container from a Docker image, publishing a container's port(s) to the host.
 
 `docker run -p <host>:<container> <image>`
 
 By default no traffic coming into the localhost network is redirect to into the Docker container network. To redirect a request into a Docker container, an explicit PORT mapping must be set up.
+
+#### -it (--interactive + --tty)
+
+The `-it` instructs Docker to allocate a pseudo-TTY connected to the container’s `STDIN`; creating an interactive `bash` shell in the container.
+
+`docker run -it <image>`
 
 #### --volume
 Sets a mapping from a folder or file in a Docker containter to a folder or file on the local machine.
@@ -89,6 +89,12 @@ Sets a mapping from a folder or file in a Docker containter to a folder or file 
 Run a command in a running Docker container.
 
 `docker exec <container> <command>`
+
+#### -it (--interactive + --tty)
+
+The `-it` instructs Docker to allocate a pseudo-TTY connected to the container’s `STDIN`; creating an interactive `bash` shell in a runnning container.
+
+`docker exec -it <container>`
 
 ##### sh
 

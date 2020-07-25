@@ -83,7 +83,7 @@ Sets a mapping from a folder or file in a Docker containter to a folder or file 
 
 *More information required*
 
-`docker run -v /usr/app/node_modules -v (pwd):/usr/app <image>`
+`docker run -v /usr/app/node_modules -v $(pwd):/usr/app <image>`
 
 ### exec
 Run a command in a running Docker container.

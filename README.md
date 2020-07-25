@@ -100,7 +100,7 @@ The `-it` instructs Docker to allocate a pseudo-TTY connected to the containerâ€
 
 Start a shell session with the default shell installed in the Docker container.
 
-`docker exec <container> sh`
+`docker exec <container> /bin/sh`
 
 ### ps
 List all running Docker containers.

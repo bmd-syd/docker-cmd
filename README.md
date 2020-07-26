@@ -94,13 +94,13 @@ Run a command in a running Docker container.
 
 The `-it` instructs Docker to allocate a pseudo-TTY connected to the container’s `STDIN`; creating an interactive `bash` shell in a runnning container.
 
-`docker exec -it <container>`
+`docker exec -it <container> <cmd>`
 
 ##### sh
 
 Start a shell session with the default shell installed in the Docker container.
 
-`docker exec <container> /bin/sh`
+`docker exec -it <container> /bin/sh`
 
 ### ps
 List all running Docker containers.

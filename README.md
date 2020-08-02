@@ -21,7 +21,6 @@ Execute command(s) and creates a new Docker image file. `RUN` is often used to i
 ### CMD
 Set default command that will be executed on running Docker container.
 
-`CMD ["param1", "param2"]`<br>
 `CMD <cmd>`
 
 ## Docker CLI
@@ -123,15 +122,27 @@ Kill a running Docker container.
 
 `docker kill <container>`
 
+Kill all running Docker containers.
+
+`docker kill $(docker ps -q)`
+
 ### rm
 Remove one or more Docker containers.
 
 `docker rm <container>`
 
+Remove all Docker containers.
+
+`docker rm $(docker ps -a -q)`
+
 ### image rm
 Remove one or more Docker images.
 
 `docker image rm <image>`
+
+Remove all Docker images.
+
+`docker rmi $(docker images -q)`
 
 ### logs
 Fetch all the logs that have been emitted from a Docker container.

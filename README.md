@@ -162,6 +162,12 @@ Create and start a Docker container a Docker image in the background, printing t
 
 `docker-compose up -d`
 
+#### --detach
+
+Build Docker images before starting Docker container.
+
+`docker-compose up --build`
+
 ### down
 
 Stops and removes all Docker containers created by `up`.
